@@ -19,16 +19,11 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Install distutils
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y python3-distutils
-
     - name: Install dependencies
       run: |
         python -m venv venv
         source venv/bin/activate
-        pip install numpy scikit-fuzzy matplotlib
+        pip install -r requirements.txt
 
     - name: Run script
       run: |
