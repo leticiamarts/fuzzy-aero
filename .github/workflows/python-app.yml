@@ -29,6 +29,13 @@ jobs:
       run: |
         source venv/bin/activate
         python intensity_control.py
+    
+    - name: Run tests
+      env:
+        PYTHONPATH: .
+      run: |
+        source venv/bin/activate
+        pytest
 
     - name: Upload intensity plot
       uses: actions/upload-artifact@v3
