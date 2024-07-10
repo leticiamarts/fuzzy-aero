@@ -5,6 +5,7 @@ This Python script demonstrates a simplified intensity control system using fuzz
 ## Installation
 
 Before running the script, make sure to install the required libraries. It's recommended to create a virtual environment to manage these libraries separately. Here's how to set up the environment:
+Python 3.11.1 was used in this project
 
 1. **Create a Virtual Environment (Optional)**
 
