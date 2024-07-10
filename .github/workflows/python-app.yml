@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.x'
 
@@ -32,7 +32,7 @@ jobs:
         python intensity_control.py
 
     - name: Upload intensity plot
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: intensity-plot
         path: output/
