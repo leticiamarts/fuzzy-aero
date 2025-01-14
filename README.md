@@ -14,7 +14,7 @@ Python 3.12 was used in this project
 2. **Install Required Libraries**
 
 ```
-pip install numpy scikit-fuzzy matplotlib
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -22,7 +22,6 @@ pip install numpy scikit-fuzzy matplotlib
 To observe different outcomes of the intensity control, you can adjust the input variables: `frequency`, `available_time`, `excess_weight`, `adherence`, and `fitness`. These variables represent different factors influencing the intensity. Modify their values as needed to see how the fuzzy logic system calculates the intensity output.
 
 ```python
-# Example: Vary the input variables
 intensity_simulator.input["frequency"] = 6
 intensity_simulator.input["available_time"] = 28
 intensity_simulator.input["excess_weight"] = 26
@@ -36,6 +35,13 @@ Execute the Python script to perform the intensity control modeling and view the
 
 ```
 python main.py
+```
+
+## Tests
+Tests can be run by the following command: 
+
+```
+pytest
 ```
 
 ## Reference
