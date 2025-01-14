@@ -1,6 +1,6 @@
 import os
 import matplotlib.pyplot as plt
-from fuzzy_simulation import setup_fuzzy_system
+from fuzzy_package.fuzzy_simulation import setup_fuzzy_system
 
 def run_simulation():
     simulator, intensity = setup_fuzzy_system()
