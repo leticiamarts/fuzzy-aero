@@ -5,7 +5,7 @@ This Python script demonstrates a simplified intensity control system using fuzz
 ## Installation
 
 Before running the script, make sure to install the required libraries. It's recommended to create a virtual environment to manage these libraries separately. Here's how to set up the environment:
-Python 3.11.1 was used in this project
+Python 3.12 was used in this project
 
 1. **Create a Virtual Environment (Optional)**
 
@@ -35,7 +35,7 @@ intensity_simulator.input["fitness"] = 59
 Execute the Python script to perform the intensity control modeling and view the output. The script will also save the resulting intensity plot in the "output" folder with a unique filename to prevent overwriting previous results.
 
 ```
-python intensity_control.py
+python main.py
 ```
 
 ## Reference
