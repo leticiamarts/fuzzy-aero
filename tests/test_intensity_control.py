@@ -1,15 +1,9 @@
-import sys
-import os
 import pytest
-
-# Add the project root directory to the sys.path
-#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from intensity_control import setup_intensity_control
+from fuzzy_package.fuzzy_simulation import setup_fuzzy_system
 
 @pytest.fixture
 def intensity_simulator():
-    simulator, _ = setup_intensity_control()
+    simulator, _ = setup_fuzzy_system()
     return simulator
 
 def test_intensity_output(intensity_simulator):
@@ -18,7 +12,8 @@ def test_intensity_output(intensity_simulator):
     intensity_simulator.input["excess_weight"] = 26
     intensity_simulator.input["adherence"] = 7
     intensity_simulator.input["fitness"] = 59
+    
     intensity_simulator.compute()
+
     assert intensity_simulator.output["intensity"] is not None
-
-
+    assert intensity_simulator.output["intensity"] == 78.53164774681801
