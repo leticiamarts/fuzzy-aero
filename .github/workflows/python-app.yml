@@ -17,7 +17,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.11.1'
+        python-version: '3.12'
 
     - name: Install dependencies
       run: |
@@ -28,7 +28,7 @@ jobs:
     - name: Run script
       run: |
         source venv/bin/activate
-        python intensity_control.py
+        python main.py
     
     - name: Run tests
       env:
